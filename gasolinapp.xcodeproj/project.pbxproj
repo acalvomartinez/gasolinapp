@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09268BD5CC811F03B3C74CAD /* Pods_gasolinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */; };
+		DC835603C4AC24131A448428 /* Pods_gasolinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7A0AE39AB14A51DBD2C0D4 /* Pods_gasolinappTests.framework */; };
 		E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */; };
 		E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219F20E8BF1A009CD608 /* ViewController.swift */; };
 		E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A120E8BF1A009CD608 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		E2B821A820E8BF1C009CD608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A620E8BF1C009CD608 /* LaunchScreen.storyboard */; };
 		E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */; };
 		E2B821BE20E8BF1C009CD608 /* gasolinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */; };
+		E2B821CD20E8C02C009CD608 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2B821CC20E8C02C009CD608 /* Podfile */; };
+		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D23DBC24EF95F321055C75 /* Pods-gasolinappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18372500B3F07AB29C032928 /* Pods-gasolinappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1DDBBAE134CBE47EE731CB05 /* Pods-gasolinappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B71C747267D50D6BE1919B4 /* Pods-gasolinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7A0AE39AB14A51DBD2C0D4 /* Pods_gasolinappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp.release.xcconfig"; sourceTree = "<group>"; };
+		6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219A20E8BF1A009CD608 /* gasolinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasolinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B8219F20E8BF1A009CD608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,8 @@
 		E2B821B920E8BF1C009CD608 /* gasolinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasolinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasolinappUITests.swift; sourceTree = "<group>"; };
 		E2B821BF20E8BF1C009CD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B821CC20E8C02C009CD608 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09268BD5CC811F03B3C74CAD /* Pods_gasolinapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC835603C4AC24131A448428 /* Pods_gasolinappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784B360BCD891CE018D586E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */,
+				3C7A0AE39AB14A51DBD2C0D4 /* Pods_gasolinappTests.framework */,
+				553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D664C2990BF60B8FF79998 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B71C747267D50D6BE1919B4 /* Pods-gasolinapp.debug.xcconfig */,
+				5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */,
+				ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */,
+				1DDBBAE134CBE47EE731CB05 /* Pods-gasolinappTests.release.xcconfig */,
+				09D23DBC24EF95F321055C75 /* Pods-gasolinappUITests.debug.xcconfig */,
+				18372500B3F07AB29C032928 /* Pods-gasolinappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2B8219120E8BF1A009CD608 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				E2B821B120E8BF1C009CD608 /* gasolinappTests */,
 				E2B821BC20E8BF1C009CD608 /* gasolinappUITests */,
 				E2B8219B20E8BF1A009CD608 /* Products */,
+				C4D664C2990BF60B8FF79998 /* Pods */,
+				784B360BCD891CE018D586E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +139,12 @@
 		E2B8219C20E8BF1A009CD608 /* gasolinapp */ = {
 			isa = PBXGroup;
 			children = (
+				E2B821CB20E8C008009CD608 /* Supporting Files */,
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
 				E2B8219F20E8BF1A009CD608 /* ViewController.swift */,
 				E2B821A120E8BF1A009CD608 /* Main.storyboard */,
 				E2B821A420E8BF1C009CD608 /* Assets.xcassets */,
 				E2B821A620E8BF1C009CD608 /* LaunchScreen.storyboard */,
-				E2B821A920E8BF1C009CD608 /* Info.plist */,
 			);
 			path = gasolinapp;
 			sourceTree = "<group>";
@@ -125,6 +167,15 @@
 			path = gasolinappUITests;
 			sourceTree = "<group>";
 		};
+		E2B821CB20E8C008009CD608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2B821CC20E8C02C009CD608 /* Podfile */,
+				E2B821A920E8BF1C009CD608 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B821C220E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinapp" */;
 			buildPhases = (
+				07EB5BC2D7B68B76C2879CEA /* [CP] Check Pods Manifest.lock */,
 				E2B8219620E8BF1A009CD608 /* Sources */,
 				E2B8219720E8BF1A009CD608 /* Frameworks */,
 				E2B8219820E8BF1A009CD608 /* Resources */,
+				F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */,
+				438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B821C520E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinappTests" */;
 			buildPhases = (
+				847E7D5F1F8231C19A1EC63D /* [CP] Check Pods Manifest.lock */,
 				E2B821AA20E8BF1C009CD608 /* Sources */,
 				E2B821AB20E8BF1C009CD608 /* Frameworks */,
 				E2B821AC20E8BF1C009CD608 /* Resources */,
+				C6A7A6C82A44F147F86E0201 /* [CP] Embed Pods Frameworks */,
+				E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2B821C820E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinappUITests" */;
 			buildPhases = (
+				8683A8F16C781C34566B4414 /* [CP] Check Pods Manifest.lock */,
 				E2B821B520E8BF1C009CD608 /* Sources */,
 				E2B821B620E8BF1C009CD608 /* Frameworks */,
 				E2B821B720E8BF1C009CD608 /* Resources */,
+				D96634FD50278EC987CCD515 /* [CP] Embed Pods Frameworks */,
+				4C392615F380286B1E4780C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +291,7 @@
 			files = (
 				E2B821A820E8BF1C009CD608 /* LaunchScreen.storyboard in Resources */,
 				E2B821A520E8BF1C009CD608 /* Assets.xcassets in Resources */,
+				E2B821CD20E8C02C009CD608 /* Podfile in Resources */,
 				E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +311,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07EB5BC2D7B68B76C2879CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gasolinapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C392615F380286B1E4780C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847E7D5F1F8231C19A1EC63D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gasolinappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8683A8F16C781C34566B4414 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gasolinappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A7A6C82A44F147F86E0201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96634FD50278EC987CCD515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2B8219620E8BF1A009CD608 /* Sources */ = {
@@ -428,15 +636,13 @@
 		};
 		E2B821C320E8BF1C009CD608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B71C747267D50D6BE1919B4 /* Pods-gasolinapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
-				INFOPLIST_FILE = gasolinapp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +652,13 @@
 		};
 		E2B821C420E8BF1C009CD608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
-				INFOPLIST_FILE = gasolinapp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,17 +668,14 @@
 		};
 		E2B821C620E8BF1C009CD608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +686,14 @@
 		};
 		E2B821C720E8BF1C009CD608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDBBAE134CBE47EE731CB05 /* Pods-gasolinappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +704,13 @@
 		};
 		E2B821C920E8BF1C009CD608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D23DBC24EF95F321055C75 /* Pods-gasolinappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +721,13 @@
 		};
 		E2B821CA20E8BF1C009CD608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18372500B3F07AB29C032928 /* Pods-gasolinappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
