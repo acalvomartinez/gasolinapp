@@ -9,11 +9,17 @@
 import UIKit
 
 final class RootConnector {
-  func wireUp(in window: UIWindow) {
-    
+  var view: ViewController!
+
+  func wireUp(in window: UIWindow,
+              viewController: ViewController = RootConnector.initialViewController()) {
+    view = viewController
+    window.rootViewController = view
   }
 }
 
 extension RootConnector {
-
+  static func initialViewController() -> ViewController {
+    return StoryboardScene.Main.viewController.instantiate()
+  }
 }

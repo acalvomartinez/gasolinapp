@@ -14,6 +14,7 @@
 		E243985020E8CA950056C61F /* RootConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984F20E8CA950056C61F /* RootConnector.swift */; };
 		E243985820E8D14D0056C61F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985720E8D14D0056C61F /* Storyboards.swift */; };
 		E243985A20E8D1580056C61F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985920E8D1580056C61F /* Assets.swift */; };
+		E243985D20E94CB10056C61F /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985C20E94CB10056C61F /* AppDelegateTests.swift */; };
 		E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */; };
 		E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219F20E8BF1A009CD608 /* ViewController.swift */; };
 		E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A120E8BF1A009CD608 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		E243984F20E8CA950056C61F /* RootConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootConnector.swift; sourceTree = "<group>"; };
 		E243985720E8D14D0056C61F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		E243985920E8D1580056C61F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E243985C20E94CB10056C61F /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		E2B8219A20E8BF1A009CD608 /* gasolinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasolinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B8219F20E8BF1A009CD608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		E243985B20E94B2B0056C61F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				E243985C20E94CB10056C61F /* AppDelegateTests.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E243985D20E94CB10056C61F /* AppDelegateTests.swift in Sources */,
 				E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
