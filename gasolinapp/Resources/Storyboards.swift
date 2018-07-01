@@ -69,6 +69,7 @@ enum StoryboardScene {
   enum Main: StoryboardType {
     static let storyboardName = "Main"
     static let initialScene = InitialSceneType<gasolinapp.ViewController>(storyboard: Main.self)
+    static let testViewController = SceneType<UIViewController>(storyboard: Main.self, identifier: "TestViewController")
     static let viewController = SceneType<gasolinapp.ViewController>(storyboard: Main.self, identifier: "ViewController")
   }
 
