@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		09268BD5CC811F03B3C74CAD /* Pods_gasolinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */; };
 		DC835603C4AC24131A448428 /* Pods_gasolinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7A0AE39AB14A51DBD2C0D4 /* Pods_gasolinappTests.framework */; };
+		E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */; };
+		E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */; };
+		E243985020E8CA950056C61F /* RootConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984F20E8CA950056C61F /* RootConnector.swift */; };
+		E243985820E8D14D0056C61F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985720E8D14D0056C61F /* Storyboards.swift */; };
+		E243985A20E8D1580056C61F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985920E8D1580056C61F /* Assets.swift */; };
 		E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */; };
 		E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219F20E8BF1A009CD608 /* ViewController.swift */; };
 		E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A120E8BF1A009CD608 /* Main.storyboard */; };
@@ -46,6 +51,11 @@
 		553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp.release.xcconfig"; sourceTree = "<group>"; };
 		6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateComponent.swift; sourceTree = "<group>"; };
+		E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateComponents.swift; sourceTree = "<group>"; };
+		E243984F20E8CA950056C61F /* RootConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootConnector.swift; sourceTree = "<group>"; };
+		E243985720E8D14D0056C61F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		E243985920E8D1580056C61F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E2B8219A20E8BF1A009CD608 /* gasolinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasolinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B8219F20E8BF1A009CD608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +124,64 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E243984720E8C86B0056C61F /* AppDelgate Components */ = {
+			isa = PBXGroup;
+			children = (
+				E243984820E8C8A10056C61F /* Components */,
+				E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */,
+				E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */,
+			);
+			path = "AppDelgate Components";
+			sourceTree = "<group>";
+		};
+		E243984820E8C8A10056C61F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E243984D20E8CA6B0056C61F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E243984E20E8CA770056C61F /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E243984E20E8CA770056C61F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8219F20E8BF1A009CD608 /* ViewController.swift */,
+				E243984F20E8CA950056C61F /* RootConnector.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E243985120E8CBF80056C61F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2B821A420E8BF1C009CD608 /* Assets.xcassets */,
+				E243985720E8D14D0056C61F /* Storyboards.swift */,
+				E243985920E8D1580056C61F /* Assets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E243985320E8CD4B0056C61F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E243985B20E94B2B0056C61F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		E2B8219120E8BF1A009CD608 = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +207,13 @@
 		E2B8219C20E8BF1A009CD608 /* gasolinapp */ = {
 			isa = PBXGroup;
 			children = (
-				E2B821CB20E8C008009CD608 /* Supporting Files */,
+				E243985320E8CD4B0056C61F /* Extensions */,
+				E243984D20E8CA6B0056C61F /* Modules */,
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
-				E2B8219F20E8BF1A009CD608 /* ViewController.swift */,
+				E243984720E8C86B0056C61F /* AppDelgate Components */,
+				E2B821CB20E8C008009CD608 /* Supporting Files */,
+				E243985120E8CBF80056C61F /* Resources */,
 				E2B821A120E8BF1A009CD608 /* Main.storyboard */,
-				E2B821A420E8BF1C009CD608 /* Assets.xcassets */,
 				E2B821A620E8BF1C009CD608 /* LaunchScreen.storyboard */,
 			);
 			path = gasolinapp;
@@ -152,6 +222,7 @@
 		E2B821B120E8BF1C009CD608 /* gasolinappTests */ = {
 			isa = PBXGroup;
 			children = (
+				E243985B20E94B2B0056C61F /* AppDelegate */,
 				E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */,
 				E2B821B420E8BF1C009CD608 /* Info.plist */,
 			);
@@ -184,6 +255,7 @@
 			buildConfigurationList = E2B821C220E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinapp" */;
 			buildPhases = (
 				07EB5BC2D7B68B76C2879CEA /* [CP] Check Pods Manifest.lock */,
+				E243985620E8D0890056C61F /* SwiftGen Scripts */,
 				E2B8219620E8BF1A009CD608 /* Sources */,
 				E2B8219720E8BF1A009CD608 /* Frameworks */,
 				E2B8219820E8BF1A009CD608 /* Resources */,
@@ -427,6 +499,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E243985620E8D0890056C61F /* SwiftGen Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Scripts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$PROJECT_DIR/gasolinapp/\" -p \"$PROJECT_DIR/swiftgen-templates/storyboards-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets \"$PROJECT_DIR/gasolinapp/Resources/Assets.xcassets\" -p \"$PROJECT_DIR/swiftgen-templates/xcassets-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Assets.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
 		E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,10 +536,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,7 +555,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E243985820E8D14D0056C61F /* Storyboards.swift in Sources */,
+				E243985A20E8D1580056C61F /* Assets.swift in Sources */,
+				E243985020E8CA950056C61F /* RootConnector.swift in Sources */,
+				E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */,
 				E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */,
+				E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */,
 				E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,11 +738,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -661,11 +757,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -678,7 +777,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -696,7 +799,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -713,7 +820,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -730,7 +841,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

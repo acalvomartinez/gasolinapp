@@ -3,6 +3,8 @@ platform :ios, '9.0'
 target 'gasolinapp' do
   use_frameworks!
 
+  pod 'SwiftGen'
+  pod 'SwiftyBeaver'
   pod 'Result'
 
   target 'gasolinappTests' do
