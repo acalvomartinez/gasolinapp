@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppDelegateSwift: UIResponder {
+class AppDelegate: UIResponder {
   var window: UIWindow?
   var rootConnector = RootConnector()
   var components = AppDelegateComponents.allComponents
@@ -22,7 +22,7 @@ class AppDelegateSwift: UIResponder {
   }
 }
 
-extension AppDelegateSwift: UIApplicationDelegate {
+extension AppDelegate: UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
     let delegateResult = components.reduce(true) { (result, task) -> Bool in
       if (result == false) {

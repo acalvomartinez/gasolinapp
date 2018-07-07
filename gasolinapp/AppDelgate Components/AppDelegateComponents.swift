@@ -9,7 +9,7 @@
 final class AppDelegateComponents {
 
   static var allComponents: [AppDelegateComponent] {
-    let components: [AppDelegateComponent] = []
+    let components: [AppDelegateComponent] = [FirebaseAppDelegateComponent()]
     return components
   }
 }

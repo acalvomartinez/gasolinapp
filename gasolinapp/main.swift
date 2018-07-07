@@ -12,7 +12,7 @@ let appDelegateClass: AnyClass?
 if (NSClassFromString("gasolinappTests.TestingAppDelegate") != nil) {
   appDelegateClass = NSClassFromString("gasolinappTests.TestingAppDelegate")
 } else {
-  appDelegateClass = AppDelegateSwift.self
+  appDelegateClass = AppDelegate.self
 }
 let args = UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc))
 UIApplicationMain(CommandLine.argc, args, nil, NSStringFromClass(appDelegateClass!))
