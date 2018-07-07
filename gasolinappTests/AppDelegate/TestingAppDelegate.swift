@@ -1,28 +1,28 @@
 //
-//  AppDelegate.swift
-//  gasolinapp
+//  TestingAppDelegate.swift
+//  Chicfy
 //
-//  Created by antonio calvo on 01/07/2018.
-//  Copyright © 2018 acalvomartinez. All rights reserved.
+//  Created by antonio calvo on 10/05/2018.
+//  Copyright © 2018 Chicfy.com. All rights reserved.
 //
 
 import UIKit
+@testable import gasolinapp
 
-class AppDelegate: UIResponder {
+class TestingAppDelegate: UIResponder {
+
   var window: UIWindow?
-  var rootConnector = RootConnector()
-  var components = AppDelegateComponents.allComponents
+  let components =  TestingAppDelegateComponents.allComponents
 
   func configureInitialViewController() {
     window = UIWindow(frame: UIScreen.main.bounds)
-    if let window = window {
-      rootConnector.wireUp(in: window)
-    }
+    window?.rootViewController = StoryboardScene.Main.testViewController.instantiate()
     window?.makeKeyAndVisible()
   }
 }
 
-extension AppDelegate: UIApplicationDelegate {
+extension TestingAppDelegate: UIApplicationDelegate {
+
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
     let delegateResult = components.reduce(true) { (result, task) -> Bool in
       if (result == false) {
@@ -82,5 +82,3 @@ extension AppDelegate: UIApplicationDelegate {
   }
 
 }
-
-

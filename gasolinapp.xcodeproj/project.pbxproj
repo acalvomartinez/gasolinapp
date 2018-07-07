@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		09268BD5CC811F03B3C74CAD /* Pods_gasolinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */; };
 		DC835603C4AC24131A448428 /* Pods_gasolinappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7A0AE39AB14A51DBD2C0D4 /* Pods_gasolinappTests.framework */; };
+		E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */; };
+		E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */; };
+		E243985020E8CA950056C61F /* RootConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243984F20E8CA950056C61F /* RootConnector.swift */; };
+		E243985820E8D14D0056C61F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985720E8D14D0056C61F /* Storyboards.swift */; };
+		E243985A20E8D1580056C61F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985920E8D1580056C61F /* Assets.swift */; };
+		E243985D20E94CB10056C61F /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985C20E94CB10056C61F /* AppDelegateTests.swift */; };
+		E243986020E94D1C0056C61F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */; };
+		E243986120E94D1C0056C61F /* TestingAppDelegateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */; };
+		E243986320E94DE00056C61F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243986220E94DDF0056C61F /* main.swift */; };
 		E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */; };
 		E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219F20E8BF1A009CD608 /* ViewController.swift */; };
 		E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A120E8BF1A009CD608 /* Main.storyboard */; };
@@ -17,6 +26,11 @@
 		E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */; };
 		E2B821BE20E8BF1C009CD608 /* gasolinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */; };
 		E2B821CD20E8C02C009CD608 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2B821CC20E8C02C009CD608 /* Podfile */; };
+		E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */; };
+		E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */; };
+		E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184920F0CBD2004EA7D4 /* Environment.swift */; };
+		E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */; };
+		E2C2185420F0D0BD004EA7D4 /* AppConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */; };
 		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +60,15 @@
 		553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp.release.xcconfig"; sourceTree = "<group>"; };
 		6071D20D988E07E6CEC4A744 /* Pods_gasolinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gasolinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateComponent.swift; sourceTree = "<group>"; };
+		E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateComponents.swift; sourceTree = "<group>"; };
+		E243984F20E8CA950056C61F /* RootConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootConnector.swift; sourceTree = "<group>"; };
+		E243985720E8D14D0056C61F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		E243985920E8D1580056C61F /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E243985C20E94CB10056C61F /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegateComponents.swift; sourceTree = "<group>"; };
+		E243986220E94DDF0056C61F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2B8219A20E8BF1A009CD608 /* gasolinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasolinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B8219F20E8BF1A009CD608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +83,11 @@
 		E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasolinappUITests.swift; sourceTree = "<group>"; };
 		E2B821BF20E8BF1C009CD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B821CC20E8C02C009CD608 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateComponent.swift; sourceTree = "<group>"; };
+		E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2C2184920F0CBD2004EA7D4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTests.swift; sourceTree = "<group>"; };
 		ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +142,68 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E243984720E8C86B0056C61F /* AppDelgate Components */ = {
+			isa = PBXGroup;
+			children = (
+				E243984820E8C8A10056C61F /* Components */,
+				E243984920E8C8DA0056C61F /* AppDelegateComponent.swift */,
+				E243984B20E8C8EA0056C61F /* AppDelegateComponents.swift */,
+			);
+			path = "AppDelgate Components";
+			sourceTree = "<group>";
+		};
+		E243984820E8C8A10056C61F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E243984D20E8CA6B0056C61F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E243984E20E8CA770056C61F /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E243984E20E8CA770056C61F /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8219F20E8BF1A009CD608 /* ViewController.swift */,
+				E243984F20E8CA950056C61F /* RootConnector.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E243985120E8CBF80056C61F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2B821A420E8BF1C009CD608 /* Assets.xcassets */,
+				E243985720E8D14D0056C61F /* Storyboards.swift */,
+				E243985920E8D1580056C61F /* Assets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E243985320E8CD4B0056C61F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E243985B20E94B2B0056C61F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */,
+				E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */,
+				E243985C20E94CB10056C61F /* AppDelegateTests.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		E2B8219120E8BF1A009CD608 = {
 			isa = PBXGroup;
 			children = (
@@ -139,11 +229,15 @@
 		E2B8219C20E8BF1A009CD608 /* gasolinapp */ = {
 			isa = PBXGroup;
 			children = (
-				E2B821CB20E8C008009CD608 /* Supporting Files */,
+				E243986220E94DDF0056C61F /* main.swift */,
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
-				E2B8219F20E8BF1A009CD608 /* ViewController.swift */,
+				E243984D20E8CA6B0056C61F /* Modules */,
+				E2C2184820F0CB9A004EA7D4 /* Configuration */,
+				E243985320E8CD4B0056C61F /* Extensions */,
+				E243984720E8C86B0056C61F /* AppDelgate Components */,
+				E2B821CB20E8C008009CD608 /* Supporting Files */,
+				E243985120E8CBF80056C61F /* Resources */,
 				E2B821A120E8BF1A009CD608 /* Main.storyboard */,
-				E2B821A420E8BF1C009CD608 /* Assets.xcassets */,
 				E2B821A620E8BF1C009CD608 /* LaunchScreen.storyboard */,
 			);
 			path = gasolinapp;
@@ -152,6 +246,8 @@
 		E2B821B120E8BF1C009CD608 /* gasolinappTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2C2185220F0D0AC004EA7D4 /* Configuration */,
+				E243985B20E94B2B0056C61F /* AppDelegate */,
 				E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */,
 				E2B821B420E8BF1C009CD608 /* Info.plist */,
 			);
@@ -172,8 +268,26 @@
 			children = (
 				E2B821CC20E8C02C009CD608 /* Podfile */,
 				E2B821A920E8BF1C009CD608 /* Info.plist */,
+				E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C2184820F0CB9A004EA7D4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */,
+				E2C2184920F0CBD2004EA7D4 /* Environment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E2C2185220F0D0AC004EA7D4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +298,13 @@
 			buildConfigurationList = E2B821C220E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinapp" */;
 			buildPhases = (
 				07EB5BC2D7B68B76C2879CEA /* [CP] Check Pods Manifest.lock */,
+				E243985620E8D0890056C61F /* SwiftGen Scripts */,
 				E2B8219620E8BF1A009CD608 /* Sources */,
 				E2B8219720E8BF1A009CD608 /* Frameworks */,
 				E2B8219820E8BF1A009CD608 /* Resources */,
 				F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */,
 				438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */,
+				E2C2184320F0C444004EA7D4 /* Fabric Scripts */,
 			);
 			buildRules = (
 			);
@@ -291,6 +407,7 @@
 			files = (
 				E2B821A820E8BF1C009CD608 /* LaunchScreen.storyboard in Resources */,
 				E2B821A520E8BF1C009CD608 /* Assets.xcassets in Resources */,
+				E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */,
 				E2B821CD20E8C02C009CD608 /* Podfile in Resources */,
 				E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */,
 			);
@@ -427,6 +544,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E243985620E8D0890056C61F /* SwiftGen Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Scripts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$PROJECT_DIR/gasolinapp/\" -p \"$PROJECT_DIR/swiftgen-templates/storyboards-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets \"$PROJECT_DIR/gasolinapp/Resources/Assets.xcassets\" -p \"$PROJECT_DIR/swiftgen-templates/xcassets-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Assets.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
+		E2C2184320F0C444004EA7D4 /* Fabric Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Scripts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
 		E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,11 +594,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,8 +618,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E243985820E8D14D0056C61F /* Storyboards.swift in Sources */,
+				E243985A20E8D1580056C61F /* Assets.swift in Sources */,
+				E243986320E94DE00056C61F /* main.swift in Sources */,
+				E243985020E8CA950056C61F /* RootConnector.swift in Sources */,
+				E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */,
+				E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */,
 				E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */,
+				E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */,
+				E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */,
 				E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */,
+				E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +636,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E243986020E94D1C0056C61F /* TestingAppDelegate.swift in Sources */,
+				E2C2185420F0D0BD004EA7D4 /* AppConfigurationTests.swift in Sources */,
+				E243986120E94D1C0056C61F /* TestingAppDelegateComponents.swift in Sources */,
+				E243985D20E94CB10056C61F /* AppDelegateTests.swift in Sources */,
 				E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,7 +721,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -641,15 +805,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B71C747267D50D6BE1919B4 /* Pods-gasolinapp.debug.xcconfig */;
 			buildSettings = {
+				APP_CONFIGURATION = debug;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -657,15 +825,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */;
 			buildSettings = {
+				APP_CONFIGURATION = release;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = "$(SRCROOT)/gasolinapp/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -678,7 +850,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -696,7 +872,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -713,7 +893,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -730,7 +914,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
 				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
