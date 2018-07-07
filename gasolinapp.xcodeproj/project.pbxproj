@@ -28,6 +28,8 @@
 		E2B821CD20E8C02C009CD608 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2B821CC20E8C02C009CD608 /* Podfile */; };
 		E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */; };
 		E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */; };
+		E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184920F0CBD2004EA7D4 /* Environment.swift */; };
+		E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */; };
 		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		E2B821CC20E8C02C009CD608 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateComponent.swift; sourceTree = "<group>"; };
 		E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2C2184920F0CBD2004EA7D4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +230,7 @@
 				E243986220E94DDF0056C61F /* main.swift */,
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
 				E243984D20E8CA6B0056C61F /* Modules */,
+				E2C2184820F0CB9A004EA7D4 /* Configuration */,
 				E243985320E8CD4B0056C61F /* Extensions */,
 				E243984720E8C86B0056C61F /* AppDelgate Components */,
 				E2B821CB20E8C008009CD608 /* Supporting Files */,
@@ -263,6 +268,15 @@
 				E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C2184820F0CB9A004EA7D4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */,
+				E2C2184920F0CBD2004EA7D4 /* Environment.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,10 +612,12 @@
 				E243986320E94DE00056C61F /* main.swift in Sources */,
 				E243985020E8CA950056C61F /* RootConnector.swift in Sources */,
 				E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */,
+				E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */,
 				E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */,
 				E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */,
 				E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */,
 				E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */,
+				E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B71C747267D50D6BE1919B4 /* Pods-gasolinapp.debug.xcconfig */;
 			buildSettings = {
+				APP_CONFIGURATION = debug;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
@@ -796,6 +813,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E8CC93A3E830EFC664A58A4 /* Pods-gasolinapp.release.xcconfig */;
 			buildSettings = {
+				APP_CONFIGURATION = release;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX34F8EY53;
