@@ -279,6 +279,7 @@
 				E2B8219820E8BF1A009CD608 /* Resources */,
 				F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */,
 				438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */,
+				E2C2184320F0C444004EA7D4 /* Fabric Scripts */,
 			);
 			buildRules = (
 			);
@@ -531,6 +532,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$PROJECT_DIR/gasolinapp/\" -p \"$PROJECT_DIR/swiftgen-templates/storyboards-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets \"$PROJECT_DIR/gasolinapp/Resources/Assets.xcassets\" -p \"$PROJECT_DIR/swiftgen-templates/xcassets-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Assets.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
+		E2C2184320F0C444004EA7D4 /* Fabric Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Scripts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
 		};
 		E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
