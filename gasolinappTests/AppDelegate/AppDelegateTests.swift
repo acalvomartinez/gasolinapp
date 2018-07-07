@@ -11,7 +11,7 @@ import XCTest
 
 class AppDelegateTests: XCTestCase {
 
-  var sut: AppDelegateSwift!
+  var sut: AppDelegate!
 
   override func setUp() {
     super.setUp()
@@ -20,7 +20,7 @@ class AppDelegateTests: XCTestCase {
   }
 
   func createSut() {
-    sut = AppDelegateSwift()
+    sut = AppDelegate()
   }
 
   override func tearDown() {
@@ -155,7 +155,7 @@ class AppDelegateTests: XCTestCase {
 
   // MARK: - Mocks & Stubs
 
-  class AppDelegateMock: AppDelegateSwift {
+  class AppDelegateMock: AppDelegate {
 
     var componentsMocked: [AppDelegateComponent] = []
 

@@ -30,6 +30,7 @@
 		E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */; };
 		E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184920F0CBD2004EA7D4 /* Environment.swift */; };
 		E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */; };
+		E2C2185420F0D0BD004EA7D4 /* AppConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */; };
 		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2C2184920F0CBD2004EA7D4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTests.swift; sourceTree = "<group>"; };
 		ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +246,7 @@
 		E2B821B120E8BF1C009CD608 /* gasolinappTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2C2185220F0D0AC004EA7D4 /* Configuration */,
 				E243985B20E94B2B0056C61F /* AppDelegate */,
 				E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */,
 				E2B821B420E8BF1C009CD608 /* Info.plist */,
@@ -275,6 +278,14 @@
 			children = (
 				E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */,
 				E2C2184920F0CBD2004EA7D4 /* Environment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E2C2185220F0D0AC004EA7D4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -626,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E243986020E94D1C0056C61F /* TestingAppDelegate.swift in Sources */,
+				E2C2185420F0D0BD004EA7D4 /* AppConfigurationTests.swift in Sources */,
 				E243986120E94D1C0056C61F /* TestingAppDelegateComponents.swift in Sources */,
 				E243985D20E94CB10056C61F /* AppDelegateTests.swift in Sources */,
 				E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */,
