@@ -27,6 +27,7 @@
 		E2B821BE20E8BF1C009CD608 /* gasolinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */; };
 		E2B821CD20E8C02C009CD608 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2B821CC20E8C02C009CD608 /* Podfile */; };
 		E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */; };
+		E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */; };
 		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		E2B821BF20E8BF1C009CD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B821CC20E8C02C009CD608 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateComponent.swift; sourceTree = "<group>"; };
+		E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECA89A68E14A30D3BAFB9959 /* Pods-gasolinappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gasolinappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +260,7 @@
 			children = (
 				E2B821CC20E8C02C009CD608 /* Podfile */,
 				E2B821A920E8BF1C009CD608 /* Info.plist */,
+				E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			files = (
 				E2B821A820E8BF1C009CD608 /* LaunchScreen.storyboard in Resources */,
 				E2B821A520E8BF1C009CD608 /* Assets.xcassets in Resources */,
+				E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */,
 				E2B821CD20E8C02C009CD608 /* Podfile in Resources */,
 				E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */,
 			);
