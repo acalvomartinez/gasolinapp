@@ -18,6 +18,10 @@
 		E243986020E94D1C0056C61F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */; };
 		E243986120E94D1C0056C61F /* TestingAppDelegateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */; };
 		E243986320E94DE00056C61F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243986220E94DDF0056C61F /* main.swift */; };
+		E2A840B12194AA97005886AE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840AE2194AA97005886AE /* Logger.swift */; };
+		E2A840B22194AA97005886AE /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840AF2194AA97005886AE /* Loggable.swift */; };
+		E2A840B32194AA97005886AE /* OSLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840B02194AA97005886AE /* OSLogDestination.swift */; };
+		E2A840B52194ABBD005886AE /* CrashlyticsDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840B42194ABBD005886AE /* CrashlyticsDestination.swift */; };
 		E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */; };
 		E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8219F20E8BF1A009CD608 /* ViewController.swift */; };
 		E2B821A320E8BF1A009CD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A120E8BF1A009CD608 /* Main.storyboard */; };
@@ -69,6 +73,10 @@
 		E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegateComponents.swift; sourceTree = "<group>"; };
 		E243986220E94DDF0056C61F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2A840AE2194AA97005886AE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E2A840AF2194AA97005886AE /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		E2A840B02194AA97005886AE /* OSLogDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogDestination.swift; sourceTree = "<group>"; };
+		E2A840B42194ABBD005886AE /* CrashlyticsDestination.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CrashlyticsDestination.swift; sourceTree = "<group>"; };
 		E2B8219A20E8BF1A009CD608 /* gasolinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasolinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B8219F20E8BF1A009CD608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,7 +215,9 @@
 				C4D664C2990BF60B8FF79998 /* Pods */,
 				784B360BCD891CE018D586E1 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		E2B8219B20E8BF1A009CD608 /* Products */ = {
 			isa = PBXGroup;
@@ -224,9 +234,10 @@
 			children = (
 				E243986220E94DDF0056C61F /* main.swift */,
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
-				E243984D20E8CA6B0056C61F /* Modules */,
-				E2C2184820F0CB9A004EA7D4 /* Configuration */,
 				E243984720E8C86B0056C61F /* AppDelgate Components */,
+				E243984D20E8CA6B0056C61F /* Modules */,
+				E2E51C7E2194A99A001AD7A6 /* Infrastructure */,
+				E2C2184820F0CB9A004EA7D4 /* Configuration */,
 				E2B821CB20E8C008009CD608 /* Supporting Files */,
 				E243985120E8CBF80056C61F /* Resources */,
 				E2B821A120E8BF1A009CD608 /* Main.storyboard */,
@@ -280,6 +291,26 @@
 				E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E2E51C7E2194A99A001AD7A6 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E2E51C7F2194A9CC001AD7A6 /* Logger */,
+			);
+			name = Infrastructure;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E2E51C7F2194A9CC001AD7A6 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				E2A840AF2194AA97005886AE /* Loggable.swift */,
+				E2A840AE2194AA97005886AE /* Logger.swift */,
+				E2A840B02194AA97005886AE /* OSLogDestination.swift */,
+				E2A840B42194ABBD005886AE /* CrashlyticsDestination.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,14 +552,18 @@
 				E243985820E8D14D0056C61F /* Storyboards.swift in Sources */,
 				E243985A20E8D1580056C61F /* Assets.swift in Sources */,
 				E243986320E94DE00056C61F /* main.swift in Sources */,
+				E2A840B52194ABBD005886AE /* CrashlyticsDestination.swift in Sources */,
 				E243985020E8CA950056C61F /* RootConnector.swift in Sources */,
 				E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */,
 				E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */,
+				E2A840B22194AA97005886AE /* Loggable.swift in Sources */,
 				E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */,
+				E2A840B12194AA97005886AE /* Logger.swift in Sources */,
 				E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */,
 				E243984A20E8C8DA0056C61F /* AppDelegateComponent.swift in Sources */,
 				E2B8219E20E8BF1A009CD608 /* AppDelegate.swift in Sources */,
 				E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */,
+				E2A840B32194AA97005886AE /* OSLogDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
