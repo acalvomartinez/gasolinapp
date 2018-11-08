@@ -7,7 +7,6 @@ target 'gasolinapp' do
   pod 'Fabric'
   pod 'Crashlytics'
 
-  pod 'SwiftGen'
   pod 'SwiftyBeaver'
   pod 'Result'
 

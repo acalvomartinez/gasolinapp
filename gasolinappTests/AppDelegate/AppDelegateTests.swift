@@ -129,7 +129,7 @@ class AppDelegateTests: XCTestCase {
       return
     }
 
-    let options = [UIApplicationOpenURLOptionsKey("test"): "test"]
+    let options = [UIApplication.OpenURLOptionsKey("test"): "test"]
     let result = altSut.application(UIApplication.shared, open: url, options: options)
 
     XCTAssertFalse(result)
@@ -147,7 +147,7 @@ class AppDelegateTests: XCTestCase {
       return
     }
 
-    let options = [UIApplicationOpenURLOptionsKey("test"): "test"]
+    let options = [UIApplication.OpenURLOptionsKey("test"): "test"]
     let result = altSut.application(UIApplication.shared, open: url, options: options)
 
     XCTAssertTrue(result)
@@ -186,7 +186,7 @@ class AppDelegateTests: XCTestCase {
       self.scheme = scheme
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       return result
     }
 
@@ -202,7 +202,7 @@ class AppDelegateTests: XCTestCase {
       return result
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
       return result
     }
   }

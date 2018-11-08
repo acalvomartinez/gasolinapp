@@ -15,4 +15,4 @@ if (NSClassFromString("gasolinappTests.TestingAppDelegate") != nil) {
   appDelegateClass = AppDelegate.self
 }
 let args = UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc))
-UIApplicationMain(CommandLine.argc, args, nil, NSStringFromClass(appDelegateClass!))
+UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass!))

@@ -187,13 +187,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E243985320E8CD4B0056C61F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		E243985B20E94B2B0056C61F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +226,6 @@
 				E2B8219D20E8BF1A009CD608 /* AppDelegate.swift */,
 				E243984D20E8CA6B0056C61F /* Modules */,
 				E2C2184820F0CB9A004EA7D4 /* Configuration */,
-				E243985320E8CD4B0056C61F /* Extensions */,
 				E243984720E8C86B0056C61F /* AppDelgate Components */,
 				E2B821CB20E8C008009CD608 /* Supporting Files */,
 				E243985120E8CBF80056C61F /* Resources */,
@@ -298,12 +290,10 @@
 			buildConfigurationList = E2B821C220E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinapp" */;
 			buildPhases = (
 				07EB5BC2D7B68B76C2879CEA /* [CP] Check Pods Manifest.lock */,
-				E243985620E8D0890056C61F /* SwiftGen Scripts */,
 				E2B8219620E8BF1A009CD608 /* Sources */,
 				E2B8219720E8BF1A009CD608 /* Frameworks */,
 				E2B8219820E8BF1A009CD608 /* Resources */,
 				F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */,
-				438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */,
 				E2C2184320F0C444004EA7D4 /* Fabric Scripts */,
 			);
 			buildRules = (
@@ -323,8 +313,6 @@
 				E2B821AA20E8BF1C009CD608 /* Sources */,
 				E2B821AB20E8BF1C009CD608 /* Frameworks */,
 				E2B821AC20E8BF1C009CD608 /* Resources */,
-				C6A7A6C82A44F147F86E0201 /* [CP] Embed Pods Frameworks */,
-				E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,8 +332,6 @@
 				E2B821B520E8BF1C009CD608 /* Sources */,
 				E2B821B620E8BF1C009CD608 /* Frameworks */,
 				E2B821B720E8BF1C009CD608 /* Resources */,
-				D96634FD50278EC987CCD515 /* [CP] Embed Pods Frameworks */,
-				4C392615F380286B1E4780C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,13 +355,16 @@
 				TargetAttributes = {
 					E2B8219920E8BF1A009CD608 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					E2B821AD20E8BF1C009CD608 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = E2B8219920E8BF1A009CD608;
 					};
 					E2B821B820E8BF1C009CD608 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = E2B8219920E8BF1A009CD608;
 					};
 				};
@@ -448,36 +437,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		438804C2F5BB59DADCD845C7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinapp/Pods-gasolinapp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C392615F380286B1E4780C5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		847E7D5F1F8231C19A1EC63D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,50 +473,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6A7A6C82A44F147F86E0201 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D96634FD50278EC987CCD515 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappUITests/Pods-gasolinappUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E243985620E8D0890056C61F /* SwiftGen Scripts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "SwiftGen Scripts";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which $PODS_ROOT/SwiftGen/bin/swiftgen >/dev/null; then\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards \"$PROJECT_DIR/gasolinapp/\" -p \"$PROJECT_DIR/swiftgen-templates/storyboards-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets \"$PROJECT_DIR/gasolinapp/Resources/Assets.xcassets\" -p \"$PROJECT_DIR/swiftgen-templates/xcassets-swift4.stencil\" --output \"$PROJECT_DIR/gasolinapp/Resources/Assets.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
-		};
 		E2C2184320F0C444004EA7D4 /* Fabric Scripts */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,21 +486,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
-		};
-		E5708127A3C240D6612675B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gasolinappTests/Pods-gasolinappTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		F2E4471579B18790117CF308 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -816,7 +716,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -836,7 +736,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unagistudio.gasolinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -857,7 +757,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gasolinapp.app/gasolinapp";
 			};
@@ -879,7 +779,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gasolinapp.app/gasolinapp";
 			};
@@ -900,7 +800,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = gasolinapp;
 			};
@@ -921,7 +821,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = gasolinapp;
 			};

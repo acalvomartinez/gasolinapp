@@ -23,7 +23,7 @@ class TestingAppDelegate: UIResponder {
 
 extension TestingAppDelegate: UIApplicationDelegate {
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     let delegateResult = components.reduce(true) { (result, task) -> Bool in
       if (result == false) {
         return result
@@ -49,19 +49,19 @@ extension TestingAppDelegate: UIApplicationDelegate {
     }
   }
 
-  func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+  func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
     let delegateResult = components.reduce(true) { (result, task) -> Bool in
       if (result == false) {
         return result
       }
 
-      return task.application(application, continue: userActivity, restorationHandler: restorationHandler)
+      return task.application(application, continue: userActivity, restorationHandler: restorationHandler as! ([Any]?) -> Void)
     }
 
     return delegateResult
   }
 
-  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+  func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
     guard let scheme = url.scheme else {
       return false
     }
