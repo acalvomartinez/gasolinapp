@@ -70,9 +70,9 @@ class AppDelegateTests: XCTestCase {
 
     let altSut = AppDelegateMock()
     altSut.componentsMocked = [componentMocked1, componentMocked2]
-
-    altSut.application(UIApplication.shared, didReceiveRemoteNotification: ["":""])
-
+   
+    altSut.application(UIApplication.shared, didReceiveRemoteNotification: ["":""], fetchCompletionHandler: { _ in })
+    
     XCTAssertTrue(componentMocked1.didReceiveRemoteNotificationInvoked)
     XCTAssertTrue(componentMocked2.didReceiveRemoteNotificationInvoked)
   }
@@ -85,7 +85,7 @@ class AppDelegateTests: XCTestCase {
     altSut.componentsMocked = [componentMocked1, componentMocked2]
 
     altSut.application(UIApplication.shared, didRegisterForRemoteNotificationsWithDeviceToken: Data())
-
+    
     XCTAssertTrue(componentMocked1.didRegisterForRemoteNotificationsInvoked)
     XCTAssertTrue(componentMocked2.didRegisterForRemoteNotificationsInvoked)
   }
@@ -129,7 +129,7 @@ class AppDelegateTests: XCTestCase {
       return
     }
 
-    let options = [UIApplication.OpenURLOptionsKey("test"): "test"]
+    let options = [UIApplication.OpenURLOptionsKey(rawValue: "test"): "test"]
     let result = altSut.application(UIApplication.shared, open: url, options: options)
 
     XCTAssertFalse(result)
@@ -147,7 +147,7 @@ class AppDelegateTests: XCTestCase {
       return
     }
 
-    let options = [UIApplication.OpenURLOptionsKey("test"): "test"]
+    let options = [UIApplication.OpenURLOptionsKey(rawValue: "test"): "test"]
     let result = altSut.application(UIApplication.shared, open: url, options: options)
 
     XCTAssertTrue(result)
@@ -189,16 +189,16 @@ class AppDelegateTests: XCTestCase {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       return result
     }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+      didReceiveRemoteNotificationInvoked = true
+    }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
       didRegisterForRemoteNotificationsInvoked = true
     }
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-      didReceiveRemoteNotificationInvoked = true
-    }
-
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
       return result
     }
 

@@ -36,16 +36,16 @@ extension AppDelegate: UIApplicationDelegate {
 
     return delegateResult
   }
-
+  
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    components.forEach {
+      $0.application(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
+    }
+  }
+  
   func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
     components.forEach {
       $0.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
-    }
-  }
-
-  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-    components.forEach {
-      $0.application(application, didReceiveRemoteNotification: userInfo)
     }
   }
 
@@ -55,7 +55,7 @@ extension AppDelegate: UIApplicationDelegate {
         return result
       }
 
-        return task.application(application, continue: userActivity, restorationHandler: restorationHandler as! ([Any]?) -> Void)
+        return task.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
 
     return delegateResult
@@ -74,7 +74,7 @@ extension AppDelegate: UIApplicationDelegate {
 
     return componentWithURL.application(app, open: url, options: options)
   }
-
+  
   func applicationDidBecomeActive(_ application: UIApplication) {
     components.forEach {
       $0.applicationDidBecomeActive(application)

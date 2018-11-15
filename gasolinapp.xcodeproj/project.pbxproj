@@ -18,6 +18,7 @@
 		E243986020E94D1C0056C61F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */; };
 		E243986120E94D1C0056C61F /* TestingAppDelegateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */; };
 		E243986320E94DE00056C61F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243986220E94DDF0056C61F /* main.swift */; };
+		E265D0F12199AB8800478715 /* LoggerAppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265D0F02199AB8800478715 /* LoggerAppDelegateComponent.swift */; };
 		E2A840B12194AA97005886AE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840AE2194AA97005886AE /* Logger.swift */; };
 		E2A840B22194AA97005886AE /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840AF2194AA97005886AE /* Loggable.swift */; };
 		E2A840B32194AA97005886AE /* OSLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A840B02194AA97005886AE /* OSLogDestination.swift */; };
@@ -73,6 +74,7 @@
 		E243985E20E94D1B0056C61F /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		E243985F20E94D1B0056C61F /* TestingAppDelegateComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegateComponents.swift; sourceTree = "<group>"; };
 		E243986220E94DDF0056C61F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E265D0F02199AB8800478715 /* LoggerAppDelegateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerAppDelegateComponent.swift; sourceTree = "<group>"; };
 		E2A840AE2194AA97005886AE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E2A840AF2194AA97005886AE /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
 		E2A840B02194AA97005886AE /* OSLogDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogDestination.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */,
+				E265D0F02199AB8800478715 /* LoggerAppDelegateComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				E243985020E8CA950056C61F /* RootConnector.swift in Sources */,
 				E243984C20E8C8EA0056C61F /* AppDelegateComponents.swift in Sources */,
 				E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */,
+				E265D0F12199AB8800478715 /* LoggerAppDelegateComponent.swift in Sources */,
 				E2A840B22194AA97005886AE /* Loggable.swift in Sources */,
 				E2B821A020E8BF1A009CD608 /* ViewController.swift in Sources */,
 				E2A840B12194AA97005886AE /* Logger.swift in Sources */,

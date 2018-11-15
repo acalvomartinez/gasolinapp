@@ -43,9 +43,9 @@ extension TestingAppDelegate: UIApplicationDelegate {
     }
   }
 
-  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
     components.forEach {
-      $0.application(application, didReceiveRemoteNotification: userInfo)
+      $0.application(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
     }
   }
 
@@ -55,7 +55,7 @@ extension TestingAppDelegate: UIApplicationDelegate {
         return result
       }
 
-      return task.application(application, continue: userActivity, restorationHandler: restorationHandler as! ([Any]?) -> Void)
+      return task.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
 
     return delegateResult
