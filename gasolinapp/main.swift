@@ -8,11 +8,5 @@
 
 import UIKit
 
-let appDelegateClass: AnyClass?
-if (NSClassFromString("gasolinappTests.TestingAppDelegate") != nil) {
-  appDelegateClass = NSClassFromString("gasolinappTests.TestingAppDelegate")
-} else {
-  appDelegateClass = AppDelegate.self
-}
-let args = UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc))
-UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass!))
+let appDelegateClass: AnyClass = NSClassFromString("gasolinappTests.TestingAppDelegate") ?? AppDelegate.self
+UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(appDelegateClass))

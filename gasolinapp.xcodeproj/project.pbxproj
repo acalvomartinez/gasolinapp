@@ -29,25 +29,16 @@
 		E2B821A520E8BF1C009CD608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A420E8BF1C009CD608 /* Assets.xcassets */; };
 		E2B821A820E8BF1C009CD608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B821A620E8BF1C009CD608 /* LaunchScreen.storyboard */; };
 		E2B821B320E8BF1C009CD608 /* gasolinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */; };
-		E2B821BE20E8BF1C009CD608 /* gasolinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */; };
 		E2B821CD20E8C02C009CD608 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2B821CC20E8C02C009CD608 /* Podfile */; };
 		E2C2184220F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184120F0C17E004EA7D4 /* FirebaseAppDelegateComponent.swift */; };
 		E2C2184720F0CAEB004EA7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C2184620F0CAEB004EA7D4 /* GoogleService-Info.plist */; };
 		E2C2184A20F0CBD2004EA7D4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184920F0CBD2004EA7D4 /* Environment.swift */; };
 		E2C2184C20F0CC97004EA7D4 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2184B20F0CC97004EA7D4 /* AppConfiguration.swift */; };
 		E2C2185420F0D0BD004EA7D4 /* AppConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2185320F0D0BD004EA7D4 /* AppConfigurationTests.swift */; };
-		F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553B3A7A42D477D5A2399556 /* Pods_gasolinappUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E2B821AF20E8BF1C009CD608 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2B8219220E8BF1A009CD608 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2B8219920E8BF1A009CD608;
-			remoteInfo = gasolinapp;
-		};
-		E2B821BA20E8BF1C009CD608 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E2B8219220E8BF1A009CD608 /* Project object */;
 			proxyType = 1;
@@ -89,7 +80,6 @@
 		E2B821AE20E8BF1C009CD608 /* gasolinappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasolinappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B821B220E8BF1C009CD608 /* gasolinappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasolinappTests.swift; sourceTree = "<group>"; };
 		E2B821B420E8BF1C009CD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2B821B920E8BF1C009CD608 /* gasolinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasolinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B821BD20E8BF1C009CD608 /* gasolinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasolinappUITests.swift; sourceTree = "<group>"; };
 		E2B821BF20E8BF1C009CD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B821CC20E8C02C009CD608 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -115,14 +105,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC835603C4AC24131A448428 /* Pods_gasolinappTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2B821B620E8BF1C009CD608 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F532909C4DFF70684380D9CF /* Pods_gasolinappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +209,6 @@
 			children = (
 				E2B8219A20E8BF1A009CD608 /* gasolinapp.app */,
 				E2B821AE20E8BF1C009CD608 /* gasolinappTests.xctest */,
-				E2B821B920E8BF1C009CD608 /* gasolinappUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,25 +339,6 @@
 			productReference = E2B821AE20E8BF1C009CD608 /* gasolinappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2B821B820E8BF1C009CD608 /* gasolinappUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2B821C820E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinappUITests" */;
-			buildPhases = (
-				8683A8F16C781C34566B4414 /* [CP] Check Pods Manifest.lock */,
-				E2B821B520E8BF1C009CD608 /* Sources */,
-				E2B821B620E8BF1C009CD608 /* Frameworks */,
-				E2B821B720E8BF1C009CD608 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2B821BB20E8BF1C009CD608 /* PBXTargetDependency */,
-			);
-			name = gasolinappUITests;
-			productName = gasolinappUITests;
-			productReference = E2B821B920E8BF1C009CD608 /* gasolinappUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,11 +354,6 @@
 						LastSwiftMigration = 1010;
 					};
 					E2B821AD20E8BF1C009CD608 = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
-						TestTargetID = E2B8219920E8BF1A009CD608;
-					};
-					E2B821B820E8BF1C009CD608 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1010;
 						TestTargetID = E2B8219920E8BF1A009CD608;
@@ -418,7 +375,6 @@
 			targets = (
 				E2B8219920E8BF1A009CD608 /* gasolinapp */,
 				E2B821AD20E8BF1C009CD608 /* gasolinappTests */,
-				E2B821B820E8BF1C009CD608 /* gasolinappUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -437,13 +393,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E2B821AC20E8BF1C009CD608 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2B821B720E8BF1C009CD608 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,24 +432,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-gasolinappTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8683A8F16C781C34566B4414 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-gasolinappUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,14 +514,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2B821B520E8BF1C009CD608 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2B821BE20E8BF1C009CD608 /* gasolinappUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -598,11 +521,6 @@
 			isa = PBXTargetDependency;
 			target = E2B8219920E8BF1A009CD608 /* gasolinapp */;
 			targetProxy = E2B821AF20E8BF1C009CD608 /* PBXContainerItemProxy */;
-		};
-		E2B821BB20E8BF1C009CD608 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2B8219920E8BF1A009CD608 /* gasolinapp */;
-			targetProxy = E2B821BA20E8BF1C009CD608 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -824,48 +742,6 @@
 			};
 			name = Release;
 		};
-		E2B821C920E8BF1C009CD608 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D23DBC24EF95F321055C75 /* Pods-gasolinappUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GX34F8EY53;
-				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = gasolinapp;
-			};
-			name = Debug;
-		};
-		E2B821CA20E8BF1C009CD608 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18372500B3F07AB29C032928 /* Pods-gasolinappUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GX34F8EY53;
-				INFOPLIST_FILE = gasolinappUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.acalvomartinez.gasolinappUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = gasolinapp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -892,15 +768,6 @@
 			buildConfigurations = (
 				E2B821C620E8BF1C009CD608 /* Debug */,
 				E2B821C720E8BF1C009CD608 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2B821C820E8BF1C009CD608 /* Build configuration list for PBXNativeTarget "gasolinappUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2B821C920E8BF1C009CD608 /* Debug */,
-				E2B821CA20E8BF1C009CD608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
