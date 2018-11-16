@@ -12,13 +12,18 @@ import UIKit
 class TestingAppDelegate: UIResponder {
 
   var window: UIWindow?
-  let components =  TestingAppDelegateComponents.allComponents
+  let components = TestingAppDelegateComponents.allComponents
 
   func configureInitialViewController() {
     window = UIWindow(frame: UIScreen.main.bounds)
-    window?.rootViewController = StoryboardScene.Main.testViewController.instantiate()
+    window?.rootViewController = rootViewController
     window?.makeKeyAndVisible()
   }
+  
+  lazy var rootViewController: UIViewController = {
+    let vc = TestingViewController(nibName: "TestingViewController", bundle: Bundle(for: TestingAppDelegate.self))
+    return vc
+  }()
 }
 
 extension TestingAppDelegate: UIApplicationDelegate {
