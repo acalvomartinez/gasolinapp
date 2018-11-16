@@ -15,9 +15,4 @@ target 'gasolinapp' do
     # Pods for testing
   end
 
-  target 'gasolinappUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
